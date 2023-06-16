@@ -1,0 +1,68 @@
+.containerContacts{
+    display: flex;
+    background-color: #fff;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: #777;
+    & .info{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        & h1{
+            color: black;
+            font-size: 35px;
+        }
+        & li{
+            text-align: left;
+            text-decoration-line: underline;
+        }
+        
+    }
+    & .contacts{
+        margin-left: 40px;
+        & label{
+            font-style: italic;
+        }
+        & ul{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        & a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #777;
+            border: none;
+            text-decoration: none;
+            &:hover{
+                color: #1255da;
+                box-shadow: 0 2px 0 0 #1255da;
+            }
+        }
+        & .leet{
+            width: 24px;
+            height: 24px;
+            background:  transparent url(../../../img/ico/leetcode.png) center no-repeat;
+        }
+        & .git{
+            width: 50px;
+            height: 24px;
+            background:  transparent url(../../../img/ico/github.png) center no-repeat;
+            background-size: 80%;
+        }
+        & .hh{
+            width: 24px;
+            height: 24px;
+            background:  transparent url(../../../img/ico/hh.png) center no-repeat;
+        }
+    }
+    
+}
+.author{
+    margin: 25px 25px 0 25px; 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background:  #777 url(../../../img/author.jpg) center no-repeat;
+    background-size: 100%;
+}

@@ -1,0 +1,128 @@
+.switcherBlock{
+    margin-top: 50px;
+    height: 45px;
+    
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.switchItem{
+    display: block;
+    width: 85px;
+    height: 40px;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    border: 1px solid #cdcdcd;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: background 0.4s ease-out;
+    & span{
+        display: none;
+        position: absolute;
+    }
+    &:hover span{
+        display: block;
+        width: 100%;
+        font-family: sans-serif;
+        background-color: white;
+        position: absolute;
+        border-radius: 4px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.257);
+        font-size: 0.8em;
+        left: 0;
+        bottom: 4em;
+        z-index: 1;
+        margin-left: 0;
+    }
+    &1{
+        border-radius: 4px 0 0 4px;
+    }
+    &Active{
+        color: white;
+        background-color: #1255da;
+        & span{
+            color: black;
+        }
+    }
+    
+}
+.select{
+    display: block;
+    background: transparent url(../../../img/switcher/arrow-bottom.svg)  center no-repeat;
+    background-size: 20%;
+    width: 65px;
+    height: 40px;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    border: 1px solid #cdcdcd;
+    border-radius: 0 4px 4px 0;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: background 0.4s ease-out;
+    & span{
+        display: none;
+        position: absolute;
+    }
+    &Active{
+        display: block;
+        background: transparent url(../../../img/switcher/arrow-top-light.svg)  center no-repeat;
+        background-size: 20%;
+        width: 65px;
+        height: 40px;
+        padding-top: 12px;
+        padding-bottom: 32px;
+        border: 1px solid #cdcdcd;
+        border-radius: 0 4px 4px 0;
+        position: relative;
+        outline: none;
+        text-decoration: none;
+        color: black;
+        background-color: #1255da;
+        cursor: pointer;
+        transition: background 0.4s ease-out;
+
+    }
+    &Active span{
+        display: block;
+        width: 1000%;
+        font-family: sans-serif;
+        background-color: white;
+        position: absolute;
+        border-radius: 4px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.257);
+        font-size: 0.8em;
+        left: -700%;
+        top: 4em;
+        z-index: 55;
+        margin-left: 0;
+        & ul{
+            margin-top: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr)
+            
+        }
+        & li{
+            text-align: left;
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.257);
+            }
+            & strong{
+                font-weight: bold;
+            }
+        }
+    }
+    
+}

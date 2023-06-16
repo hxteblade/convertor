@@ -1,0 +1,32 @@
+.loader{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    background-color: #1255da;
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+        background-color: #1255da;
+    }
+    25% {
+        transform: rotate(90deg) scale(1);
+        background-color: white;
+    }
+    50%{
+        transform: rotate(90deg) scale(1);
+        background-color: white;
+    }
+    75%{
+        transform: rotate(180deg) scale(1);
+        background-color: #1255da;
+    }
+    100%{
+        transform: rotate(180deg) scale(1);
+        background-color: #1255da;
+    }
+}
+
