@@ -48,9 +48,6 @@ main{
   background:  transparent url(../src/img/logo.png) center center no-repeat;
   background-size: 90%;
 }
-span{
-  display: block;
-}
 .convertor{
   width: 100%;
   display: flex;
