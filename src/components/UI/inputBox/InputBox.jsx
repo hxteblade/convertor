@@ -1,6 +1,5 @@
 import React from "react";
 import cl from "./inputBox.module.scss"
-import { hover } from "@testing-library/user-event/dist/hover";
 
 const InputBox = ({setValue,value,currency,fromCurrency,rates}) => {
     let price = 0;

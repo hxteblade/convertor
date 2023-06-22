@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import cl from "./ConvertorTable.module.scss"
-import axios from "axios";
-import Switcher from "../switcher/Switcher";
 import CbrService from "../../API/CbrService";
 import SideBlock from "../side/SideBlock";
 import Swap from "../swap/Swap"
