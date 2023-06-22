@@ -1,9 +1,12 @@
 .tableContainer{
     
-    width: 1000px;
+    width: 90%;
     background-color: white;
     border-radius: 8px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
 }

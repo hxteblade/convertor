@@ -1,6 +1,7 @@
 import React from "react";
 import Switcher from "../switcher/Switcher";
 import InputBox from "../inputBox/InputBox";
+import cl from "./SideBlock.module.scss"
 
 const SideBlock = ({rates,arrRates,returnFun,currency,fromCurrency,setValue,setPrice,value}) => {
     
@@ -9,7 +10,7 @@ const SideBlock = ({rates,arrRates,returnFun,currency,fromCurrency,setValue,setP
     }
 
     return(
-        <div>
+        <div className={cl.container}>
             <Switcher
                 rates={rates}
                 arrRates={arrRates}
