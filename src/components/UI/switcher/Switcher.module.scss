@@ -4,13 +4,16 @@
     
     border-radius: 4px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0;
 }
 .switchItem{
     display: block;
     width: 85px;
     height: 40px;
+    @media (max-width: 767px) {
+        width: 70px;
+    }
     padding-top: 12px;
     padding-bottom: 32px;
     border: 1px solid #cdcdcd;
@@ -102,12 +105,26 @@
         top: 4em;
         z-index: 55;
         margin-left: 0;
+        @media (max-width: 767px) {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            z-index: 99;
+            background-color:#1255da;
+            color: white;
+            p{
+                color: white;
+            }
+            
+        }
         & ul{
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(1, 1fr)
+            }
             margin-top: 0;
             width: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr)
-            
         }
         & li{
             text-align: left;

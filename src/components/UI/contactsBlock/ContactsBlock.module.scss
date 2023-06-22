@@ -4,6 +4,9 @@
     border-radius: 4px;
     font-family: sans-serif;
     color: #777;
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
     & .info{
         margin-left: 20px;
         margin-bottom: 20px;
@@ -65,4 +68,7 @@
     border-radius: 50%;
     background:  #777 url(../../../img/author.jpg) center no-repeat;
     background-size: 100%;
+    @media (max-width: 767px){
+        display: none;
+    }
 }

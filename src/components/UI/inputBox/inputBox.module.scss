@@ -3,6 +3,10 @@
     padding: 30px 20px 15px 20px;
     margin: 24px 0px;
     border: 1px solid #cdcdcd;
+    @media (max-width: 767px) {
+        width: 100%;
+        padding: 30px 0 20px 5px;
+    }
     border-radius: 4px;
 }
 input::-webkit-outer-spin-button,

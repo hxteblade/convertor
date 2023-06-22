@@ -10,6 +10,10 @@
   width: 100vw;
   height: 100vh;
   background: #fff url(../src/img/main_bg_img.jpg) center center no-repeat;
+  @media (max-width: 767px) {
+    width: 110vw;
+    height: 110vh;
+}
 }
 .App_container{
   height: 100%;
@@ -75,5 +79,8 @@ footer{
   height: 30px;
   bottom: 0;
   background-color: rgb(39, 39, 39);
+  @media (max-width: 767px) {
+    display: none;
+}
 }
 

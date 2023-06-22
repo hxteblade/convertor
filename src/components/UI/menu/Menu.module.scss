@@ -14,6 +14,10 @@
     &Content{
         width: 20%;
         height: 100%;
+        @media (max-width: 767px) {
+            width: 30%;
+            height: 110%;
+        }
         background-color: #07245d;
         display: flex;
         flex-direction: column;
